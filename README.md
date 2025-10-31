@@ -96,3 +96,4 @@ If you find this project useful for your research, please consider citing the fo
 ```
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CASIA-IVA-Lab/FastSAM&type=Date)](https://star-history.com/#CASIA-IVA-Lab/FastSAM&Date)
+
