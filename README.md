@@ -4,21 +4,17 @@
 
 [[`📕Paper`](https://www.mdpi.com/2313-433X/11/9/316)] [[`🤗HuggingFace Demo`](https://huggingface.co/spaces/An-619/FastSAM)] [[`Colab demo`](https://colab.research.google.com/drive/1oX14f6IneGGw612WgVlAiy91UHwFAvr9?usp=sharing)] [[`Replicate demo & API`](https://replicate.com/casia-iva-lab/fastsam)] [~~[`OpenXLab Demo`](https://openxlab.org.cn/apps/detail/zxair/FastSAM)~~] [[`Model Zoo`](#model-checkpoints)] [[`BibTeX`](#citing-sar)] [[`Video Demo`](https://youtu.be/yHNPyqazYYU)]
 
-![FastSAM Speed](assets/head_fig.png)
-
-
 
 In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on image preprocessing that does not require additional model training. By integration of the patch-agnostic detection frontend with an additional broken pixel restoration backend, **Segment and Recover (SAR)** is developed for the large-mask-covered object-hiding attack. Our approach breaks the limitation of the patch scale, shape, and location, accurately localizes the adversarial patch on the frontend, and restores the broken pixel on the backend. Our evaluations of the clean performance demonstrate that SAR is compatible with a variety of pretrained object detectors. Moreover, SAR exhibits notable resilience improvements over state-of-the-art methods evaluated in this paper. Our comprehensive evaluation studies involve diverse patch types, such as localized-noise, printable, visible, and adaptive adversarial patches.
 
-![FastSAM design](assets/Overview.png)
+![](assets/Overview.png)
 
 
 
-|                    VisDrone Dataset Patch                    |                    Custom Dataset Patch                    |                    Custom Dataset Patch                    |
-| :----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="assets/detection_and_remove_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" />  | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-| :----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" /> | <img src="assets/detection_and_inpaint_detr.png" width="256" /> |
+|   |                    YOLOv11                                        |                    Faster RCNN                        |                    DETR                    |
+|   | :----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
+|PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" />  | <img src="assets/detection_and_remove_detr.png" width="256" /> |
+|SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" /> | <img src="assets/detection_and_inpaint_detr.png" width="256" /> |
 
 **🍇 Updates**
 - **`2024/6/25`** The edge jaggies issue has been slightly improved [#231](https://github.com/CASIA-IVA-Lab/FastSAM/pull/231), and the strategy has also been synchronized to the ultralytics project[#13939](https://github.com/ultralytics/ultralytics/pull/13939),[#13912](https://github.com/ultralytics/ultralytics/pull/13912). The [huggingface demo](https://huggingface.co/spaces/An-619/FastSAM) is updated.
@@ -96,4 +92,5 @@ If you find this project useful for your research, please consider citing the fo
 ```
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CASIA-IVA-Lab/FastSAM&type=Date)](https://star-history.com/#CASIA-IVA-Lab/FastSAM&Date)
+
 
