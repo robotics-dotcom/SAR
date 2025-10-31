@@ -1,4 +1,4 @@
-PAD
+SAR
 =====
 This is the code of the paper "SAR: Patch-Agnostic Defense against Adversarial Patch Attacks", without parallel acceleration.
 
@@ -10,7 +10,7 @@ pip install -r requirements.txt<br>
 
 Usage
 ----
-python run-PAD.py<br>
+python run-SAR.py<br>
 Remember to replace the file path with your own.<br>
 input_path: the dir path of the attacked images<br>
 save_path: the dir path where you want to save the defended images
