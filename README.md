@@ -5,18 +5,15 @@
 [[`📕Paper`](https://www.mdpi.com/2313-433X/11/9/316)] [[`🤗HuggingFace Demo`](https://huggingface.co/spaces/An-619/FastSAM)] [[`Colab demo`](https://colab.research.google.com/drive/1oX14f6IneGGw612WgVlAiy91UHwFAvr9?usp=sharing)] [[`Replicate demo & API`](https://replicate.com/casia-iva-lab/fastsam)] [~~[`OpenXLab Demo`](https://openxlab.org.cn/apps/detail/zxair/FastSAM)~~] [[`Model Zoo`](#model-checkpoints)] [[`BibTeX`](#citing-sar)] [[`Video Demo`](https://youtu.be/yHNPyqazYYU)]
 
 
-![](assets/Large_Mask_Inpaint.png)
+
 
 In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on image preprocessing that does not require additional model training. By integration of the patch-agnostic detection frontend with an additional broken pixel restoration backend, **Segment and Recover (SAR)** is developed for the large-mask-covered object-hiding attack. Our approach breaks the limitation of the patch scale, shape, and location, accurately localizes the adversarial patch on the frontend, and restores the broken pixel on the backend. Our evaluations of the clean performance demonstrate that SAR is compatible with a variety of pretrained object detectors. Moreover, SAR exhibits notable resilience improvements over state-of-the-art methods evaluated in this paper. Our comprehensive evaluation studies involve diverse patch types, such as localized-noise, printable, visible, and adaptive adversarial patches.
 
+![](assets/Large_Mask_Inpaint.png)
 
 
 
 
-|       |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
-|:----: | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
-|PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-|SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 
 
 **🍇 Updates** 
@@ -61,8 +58,15 @@ Then, you can run the scripts to try the everything mode and three prompt modes.
 # Everything mode
 python run-SAR.py 
 ```
+## Results
 
+All result were tested on a single NVIDIA GeForce RTX 3090.
 
+### 1. Inference comparsion of PAD and SAR
+|       |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
+|:----: | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
+|PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
+|SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 ## License
 
 The model is licensed under the [Apache 2.0 license](LICENSE).
@@ -96,6 +100,7 @@ If you find this project useful for your research, please consider citing the fo
   publisher={MDPI}
 }
 ```
+
 
 
 
