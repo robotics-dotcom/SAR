@@ -14,7 +14,6 @@ In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on im
 |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
 | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
 | <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-| :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
 | <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 
 
@@ -31,7 +30,7 @@ __Authors__: [Haotian Gu](), [Hamid Jafarnejad Sani](https://www.stevens.edu/pro
 Clone the repository locally:
 
 ```shell
-git clone 
+git clone https://github.com/robotics-dotcom/SAR.git
 ```
 
 Create the conda env. The code requires `python>=3.7`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
@@ -96,7 +95,6 @@ If you find this project useful for your research, please consider citing the fo
 }
 ```
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CASIA-IVA-Lab/FastSAM&type=Date)](https://star-history.com/#CASIA-IVA-Lab/FastSAM&Date)
 
 
 
