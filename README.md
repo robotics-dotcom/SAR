@@ -11,10 +11,10 @@ In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on im
 
 
 
-   |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
-   | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
-PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
+|       |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
+|:----: | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
+|PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
+|SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 
 
 **🍇 Updates** 
@@ -94,6 +94,7 @@ If you find this project useful for your research, please consider citing the fo
   publisher={MDPI}
 }
 ```
+
 
 
 
