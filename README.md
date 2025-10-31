@@ -11,14 +11,19 @@ In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on im
 
 
 
-|   |                    YOLOv11                                        |                    Faster RCNN                        |                    DETR                    |
-|   | :----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
-|PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" />  | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-|SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" /> | <img src="assets/detection_and_inpaint_detr.png" width="256" /> |
+|                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
+| :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
+| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
+| :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
+| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 
-**🍇 Updates**
-- **`2024/6/25`** The edge jaggies issue has been slightly improved [#231](https://github.com/CASIA-IVA-Lab/FastSAM/pull/231), and the strategy has also been synchronized to the ultralytics project[#13939](https://github.com/ultralytics/ultralytics/pull/13939),[#13912](https://github.com/ultralytics/ultralytics/pull/13912). The [huggingface demo](https://huggingface.co/spaces/An-619/FastSAM) is updated.
-- **`2023/11/28`** Recommendation: [Semantic FastSAM](https://github.com/KBH00/Semantic-Fast-SAM), which add the semantic class labels to FastSAM. Thanks to [KBH00](https://github.com/KBH00/Semantic-Fast-SAM) for this valuable contribution.
+
+**🍇 Updates** 
+
+- **`2024/6/25`**: Code for real-time adversarial patch defender Segment and Recover (SAR) is available now! Check this [repo]() for more details.
+- **`2023/11/28`**: Robust Object Detection Under Adversarial Patch Attacks in Vision-Based Navigation is available. Check this [repo]() for more details.
+
+__Authors__: [Haotian Gu](), [Hamid Jafarnejad Sani](https://www.stevens.edu/profile/hjafarne) from the [SIT Safe Autonomous System Lab](https://saslabstevens.github.io/).
 
 
 ## Installation
@@ -92,5 +97,6 @@ If you find this project useful for your research, please consider citing the fo
 ```
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CASIA-IVA-Lab/FastSAM&type=Date)](https://star-history.com/#CASIA-IVA-Lab/FastSAM&Date)
+
 
 
