@@ -1,16 +1,7 @@
-PAD
+Backend
 =====
-This is the code of the paper "SAR: Patch-Agnostic Defense against Adversarial Patch Attacks", without parallel acceleration.
+This is the backend model of the SAR.
 
 Setup
 -----
-conda create --name pad python=3.8<br>
-conda activate pad<br>
-pip install -r requirements.txt<br>
-
-Usage
-----
-python run-PAD.py<br>
-Remember to replace the file path with your own.<br>
-input_path: the dir path of the attacked images<br>
-save_path: the dir path where you want to save the defended images
+Please download the migan_512_places2.pt into this folder
