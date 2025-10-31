@@ -7,14 +7,14 @@
 
 In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on image preprocessing that does not require additional model training. By integration of the patch-agnostic detection frontend with an additional broken pixel restoration backend, **Segment and Recover (SAR)** is developed for the large-mask-covered object-hiding attack. Our approach breaks the limitation of the patch scale, shape, and location, accurately localizes the adversarial patch on the frontend, and restores the broken pixel on the backend. Our evaluations of the clean performance demonstrate that SAR is compatible with a variety of pretrained object detectors. Moreover, SAR exhibits notable resilience improvements over state-of-the-art methods evaluated in this paper. Our comprehensive evaluation studies involve diverse patch types, such as localized-noise, printable, visible, and adaptive adversarial patches.
 
-![](assets/Overview.png)
+![](assets/Large_Mask_Inpaint.png)
 
 
 
-|                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
-| :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
-| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
-| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
+   |                    YOLOv11                                        |                    Faster RCNN                               |                               DETR                             |
+   | :---------------------------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------: |
+PAD| <img src="assets/detection_and_remove_yolo11.jpg" width="256" />  | <img src="assets/8_faster_rcnn_uninpaint.png" width="256" /> | <img src="assets/detection_and_remove_detr.png" width="256" /> |
+SAR| <img src="assets/detection_and_inpaint_yolo11.jpg" width="256" /> | <img src="assets/8_faster_rcnn_inpaint.png" width="256" />   | <img src="assets/detection_and_inpaint_detr.png" width="256" />|
 
 
 **🍇 Updates** 
@@ -94,6 +94,7 @@ If you find this project useful for your research, please consider citing the fo
   publisher={MDPI}
 }
 ```
+
 
 
 
