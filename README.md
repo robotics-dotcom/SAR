@@ -11,7 +11,7 @@ In this paper, we introduce **SAR**, a patch-agnostic defense scheme based on im
 ![](assets/Large_Mask_Inpaint.png)
 
 
-**🍇 Updates** 
+**🤗Updates** 
 
 - **`2024/6/25`**: Code for real-time adversarial patch defender Segment and Recover (SAR) is available now! Check this [repo]() for more details.
 - **`2023/11/28`**: Robust Object Detection Under Adversarial Patch Attacks in Vision-Based Navigation is available. Check this [repo]() for more details.
@@ -95,6 +95,7 @@ If you find this project useful for your research, please consider citing the fo
   publisher={MDPI}
 }
 ```
+
 
 
 
